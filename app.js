@@ -11,6 +11,7 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 var Math_Homework = require('./routes/Math_Homework');
 var AddActivity = require('./routes/AddActivity');
+var EditActivity = require('./routes/EditActivity');
 // Example route
 // var user = require('./routes/user');
 
@@ -41,6 +42,7 @@ app.get('/', index.view);
 app.get('/index', index.view);
 app.get('/Math_Homework', Math_Homework.view);
 app.get('/AddActivity', AddActivity.view);
+app.get('/EditActivity', EditActivity.view);
 // Example route
 // app.get('/users', user.list);
 
