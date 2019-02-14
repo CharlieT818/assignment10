@@ -1,0 +1,40 @@
+     .card {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     border-radius: 5px;
+     width: 335px;
+     text-align: left;
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 20px;
+     color: rgba(133,133,133,1);
+     background-color: #FFF;
+     position: relative;
+     }
+     .container {
+     padding: 2px 16px;
+     }
+     #background {
+          position: absolute;
+          box-sizing: border-box;
+          background: #E5E5E5;
+          width: 360px;
+          height: 640px;
+          text-align: center;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          background-color: rgba(233,233,233,1);
+          overflow: hidden;
+          opacity: 1;
+     }
+     .title {
+          text-align: center;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px; 
+
+     }
