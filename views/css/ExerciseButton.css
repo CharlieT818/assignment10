@@ -1,0 +1,43 @@
+/* Breathing Exercises button ---------------------*/
+#breathing{
+  color: white;
+  height: 4em;
+  width: 50%;
+  padding: 1em auto;
+  margin: 1em auto;
+  background-color: #555555;
+ 
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;  
+}
+
+#yoga {
+  color: white;
+
+  height: 4em;
+  width: 50%;
+  padding: 1em auto;
+  margin: 1em auto;
+  background-color: #87CEFA;
+ 
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;  
+}
+#podcast{
+  color:white;
+
+  height: 4em;
+  width: 50%;
+  padding: 1em auto;
+  margin: 1em auto;
+  background-color: #006400;
+ 
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;  
+}
