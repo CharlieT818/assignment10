@@ -46,6 +46,10 @@
           width: 360px;
           bottom: 0;
      }
+     .edit_container{
+          float: right;
+          padding: 15px;
+     }
      .settings_container {
           width: 120px;
           display: inline-block;
