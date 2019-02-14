@@ -1,14 +1,15 @@
      .card {
      margin: auto;
-     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
      transition: 0.3s;
-     border-radius: 5px;
+     border-radius: 3px;
+     height: 104px;
      width: 335px;
      text-align: left;
      font-family: Roboto;
      font-style: normal;
      font-weight: normal;
-     font-size: 20px;
+     font-size: 18px;
      color: rgba(133,133,133,1);
      background-color: #FFF;
      position: relative;
@@ -41,24 +42,52 @@
      }
      .navbar {
           position: absolute;
-          background-color: #9575cd;
+          box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.13);
+          background-color: #9fa8da;
           height: 56px;
           width: 360px;
           bottom: 0;
+          display: flex;                             
+          align-items: center; 
+          justify-content: center;
      }
-     .edit_container{
+
+.fab {
+  transition: all 300ms ease-in-out;
+  border-radius: 50%;
+  color: white;
+  width: 56px;
+  height: 56px;
+  background-color: #9fa8da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 16px;
+  bottom: 72px;
+  cursor: pointer;
+  font-size: 2em;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16), 0px 3px 10px rgba(0, 0, 0, 0.16);
+}
+
+.fab i {
+  transition: all 300ms ease-in-out;
+  will-change: transform;
+}
+
+     .edit_container {
           float: right;
-          padding: 15px;
      }
+     .start_container {
+          float: left;
+     }
+
      .settings_container {
           width: 120px;
-          display: inline-block;
      }
      .activities_container {
           width: 120px;
-          display: inline-block;
      }
      .statistics_container {
           width: 120px;
-          display: inline-block;
      }
