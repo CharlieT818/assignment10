@@ -1,0 +1,52 @@
+          .background {
+          position: relative;
+          padding-top: 10px;
+          margin: auto;
+          background: #E5E5E5;
+          width: 360px;
+          height: 640px;
+          text-align: center;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          background-color: rgba(233,233,233,1);
+     }
+     .title {
+          text-align: center;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          color: rgba(133,133,133,1);
+          font-size: 20px; 
+
+     }
+     .navbar {
+          position: absolute;
+          box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.13);
+          background-color: #9fa8da;
+          height: 56px;
+          width: 360px;
+          bottom: 0;
+          display: flex;                             
+          align-items: center; 
+          justify-content: center;
+     }
+     .setting{
+     	  text-align: left;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 19px;
+          padding-left: 28px;
+          color: rgba(133,133,133,1);
+     }
+     .settings_container {
+          width: 120px;
+     }
+     .activities_container {
+          width: 120px;
+     }
+     .statistics_container {
+          width: 120px;
+     }

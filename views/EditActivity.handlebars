@@ -3,48 +3,47 @@
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<title>Add Activity</title>
+<title>Edit Activity</title>
 <link href="css/LogIn.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
 <div class="container">
-  <div class="background">
+    <div class="background">
   <i class="material-icons" style="float:left;margin-left: 28px;cursor: pointer;color: rgba(133,133,133,1);padding-top: 25px"><a href = "activities"> arrow_back</i></a>
     <div class="title">
-  <h3 style="font-weight: 500">Add an activity</h3>
+  <h3 style="font-weight: 500">Edit activity</h3>
 </div>
   
-  <form id="AddActivityForm" role="form" method="get" action="/add">
+  <form>
     
     <div class="group">      
-      <input type="text" class="form-control" id="ActivityName" name="ActivityName" required>
+      <input type="text" required>
       <span class="highlight"></span>
       <span class="bar"></span>
       <label>Name</label>
     </div>
       
     <div class="group">      
-      <input type="text" class="form-control" id="workLength" name="workLength" required>
+      <input type="text" required>
       <span class="highlight"></span>
       <span class="bar"></span>
       <label>Work Length</label>
     </div>
 
        <div class="group">      
-      <input type="text" class="form-control" id="breakLength" name="breakLength" required>
+      <input type="text" required>
       <span class="highlight"></span>
       <span class="bar"></span>
       <label>Break Length</label>
     </div>
 
-
-  <button class="pure-material-button-contained" style="background-color:#bdbdbd;color:#757575">Cancel</button>
-
-  <button type="submit" class="pure-material-button-contained">Add</button>
   </form>
 
-</div>
+  <button class="pure-material-button-contained" style="background-color:#bdbdbd;color:#757575">Cancel</button>
+  <button class="pure-material-button-contained">Save changes</button>
+  
 </div>
 
 </div>
