@@ -18,6 +18,7 @@ var Math_Homework = require('./routes/Math_Homework');
 var AddActivity = require('./routes/AddActivity');
 var EditActivity = require('./routes/EditActivity');
 var Statistics = require('./routes/Statistics');
+var ExercisesButton = require('./routes/ExercisesButton');
 var StatisticsMath = require('./routes/StatisticsMath');
 var StartReading = require('./routes/StartReading');
 var StartScience = require('./routes/StartScience');
@@ -69,6 +70,7 @@ app.get('/Settings', Settings.view);
 app.get('/SettingsMath', SettingsMath.view);
 app.get('/StartExercises', StartExercises.view);
 app.get('/BeginTimer', BeginTimer.view);
+app.get('/ExercisesButton', ExercisesButton.view);
 app.get('/add', add.addactivities);
 app.get('/input', input.inputactivities);
 
