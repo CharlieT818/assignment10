@@ -9,6 +9,11 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
+var activities = require('./routes/activities');
+var CompleteActivity = require('./routes/CompleteActivity');
+var InputActivities = require('./routes/InputActivities');
+var add = require('./routes/add');
+var input = require('./routes/input');
 var Math_Homework = require('./routes/Math_Homework');
 var AddActivity = require('./routes/AddActivity');
 var EditActivity = require('./routes/EditActivity');
@@ -49,6 +54,9 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/index', index.view);
+app.get('/activities', activities.view);
+app.get('/InputActivities', InputActivities.view);
+app.get('/CompleteActivity', CompleteActivity.view);
 app.get('/Math_Homework', Math_Homework.view);
 app.get('/AddActivity', AddActivity.view);
 app.get('/EditActivity', EditActivity.view);
@@ -61,6 +69,8 @@ app.get('/Settings', Settings.view);
 app.get('/SettingsMath', SettingsMath.view);
 app.get('/StartExercises', StartExercises.view);
 app.get('/BeginTimer', BeginTimer.view);
+app.get('/add', add.addactivities);
+app.get('/input', input.inputactivities);
 // Example route
 // app.get('/users', user.list);
 

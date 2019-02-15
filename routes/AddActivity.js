@@ -1,8 +1,6 @@
+var data = require("../data.json");
 
-/*
- * GET home page.
- */
-
-exports.view = function(req, res){
-  res.render('AddActivity');
-};
+exports.view= function(request, response) {    
+	// Your code goes here
+	response.render('AddActivity', data);
+ }
