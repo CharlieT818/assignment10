@@ -61,6 +61,7 @@ app.get('/Settings', Settings.view);
 app.get('/SettingsMath', SettingsMath.view);
 app.get('/StartExercises', StartExercises.view);
 app.get('/BeginTimer', BeginTimer.view);
+
 // Example route
 // app.get('/users', user.list);
 
