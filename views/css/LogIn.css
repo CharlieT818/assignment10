@@ -218,3 +218,28 @@ input:focus ~ .highlight {
 .pure-material-button-contained:disabled::after {
     opacity: 0;
 }
+
+     .background {
+          position: relative;
+          padding-top: 10px;
+          margin: auto;
+          background: #E5E5E5;
+          width: 360px;
+          height: 640px;
+          text-align: center;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          background-color: rgba(233,233,233,1);
+     }
+
+          .title {
+          text-align: center;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          color: rgba(133,133,133,1);
+          font-size: 20px; 
+
+     }
