@@ -10,22 +10,35 @@
 <body>
 
     <div class="background">
-      <i class="material-icons" style="float:left;margin-left: 28px;cursor: pointer;color: rgba(133,133,133,1);padding-top: 25px">arrow_back</i>
+      <i class="material-icons" style="float:left;margin-left: 28px;cursor: pointer;color: rgba(133,133,133,1);padding-top: 25px"><a href="activities" style="text-decoration: none">arrow_back</i></a>
     <div class="title">
-  <h3 style="font-weight: 400">Activity Name</h3>
+      {{# each activities}}
+  <h3 style="font-weight: 400">{{this.ActivityName}}</h3>
 </div>
 <div class="timeelapsed">
   <p>Time Elapsed: 0 min</p>
 </div>
-
+  
   <div class="card">
       <div class="container">
-
-        <p style="font-size: 15px;margin: 0;color:white;letter-spacing: 0.1em;text-align: center;">START WORK</p>
+        <p class="timer">{{this.workLength}}</p>
+        <p class="start">START WORK</p>
       </div>
+    </div>
+    {{/ each}}
+
+        <div class="button_finish">
+    <button onclick="javascrtpt:window.location.href='activities'" class="pure-material-button-contained">Finish</button>
+</div>
+
+    <div class="arrow">
+      <img src="images/Arrow2.png">
     </div>
 
 
+
+    <div class="fab" id="fabAExercise"> <i class="material-icons">spa</i>
+    </div>
 </div>
 </body>
 </html>

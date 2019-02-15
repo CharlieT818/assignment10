@@ -71,6 +71,7 @@ app.get('/StartExercises', StartExercises.view);
 app.get('/BeginTimer', BeginTimer.view);
 app.get('/add', add.addactivities);
 app.get('/input', input.inputactivities);
+
 // Example route
 // app.get('/users', user.list);
 

@@ -1,0 +1,147 @@
+     .background {
+          position: relative;
+          padding-top: 10px;
+          margin: auto;
+          background: #E5E5E5;
+          width: 360px;
+          height: 640px;
+          text-align: center;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          background-color: rgba(233,233,233,1);
+     }
+     .title {
+          text-align: center;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          color: rgba(133,133,133,1);
+          font-size: 20px; 
+
+     }
+     .navbar {
+          position: absolute;
+          box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.13);
+          background-color: #9fa8da;
+          height: 56px;
+          width: 360px;
+          bottom: 0;
+          display: flex;                             
+          align-items: center; 
+          justify-content: center;
+     }
+
+     .settings_container {
+          width: 120px;
+     }
+     .activities_container {
+          width: 120px;
+     }
+     .statistics_container {
+          width: 120px;
+     }
+     .description{
+          text-align: left;
+          font-family: Roboto
+          font-size: 18px;
+          color: rgba(133,133,133,1);
+     }
+     .facts{
+         text-align: left;
+          font-family: Roboto;
+          font-size: 18px;
+          padding-left: 25px;
+          padding-top: 210px;
+          color: rgba(133,133,133,1); 
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: white;
+}
+.graph__wrapper {
+  width: 380px;
+  margin: 30px auto;
+  position: relative;
+  padding-right: 360px;
+}
+.graph__wrapper svg {
+  position: absolute;
+  margin: 36px 0px 0px 15px;
+}
+.coordinates {
+  position: absolute;
+  counter-reset: line 6;
+}
+.coordinates span {
+  display: inline-block;
+  border-bottom: 0.5px solid #9e9e9e;
+  padding-right: 340px;
+  height: 20px;
+  width: 300px;
+}
+.coordinates span:before {
+  counter-increment: line -1;
+  content: counter(line);
+  display: inline-block;
+  color: rgba(133,133,133,1);
+  margin: 10px 0px 0px -15px;
+}
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 3s ease-in forwards;
+          animation: dash 3s ease-in forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
