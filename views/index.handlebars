@@ -3,15 +3,19 @@
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Log In</title>
 <link href="css/LogIn.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
-<div class="container">
-  
-  <h2>Please create your user login</h2>
-  
-  <form>
+<body bgcolor="#E5E5E5">
+    <div class="title">
+  <h3 style="font-weight: 500; padding-top: 10px; padding-bottom: 10px; padding-left: 28px">Please create your login</h3>
+</div>
+
+
+  <div class="container">
+  <form role="form" >
     
     <div class="group">      
       <input type="text" required>
@@ -26,14 +30,18 @@
       <span class="bar"></span>
       <label>Password</label>
     </div>
-    
-  
-    </form>
-  <a href="InputActivities">
-  <button class="pure-material-button-contained">Log In</button>
+
+
+  <div style="text-align: center;padding-top: 8px">
+  <button id="login" class="pure-material-button-contained">Log in</button>
+</a>
+</div>
+
+
+</div>
+  </form>
 
 </div>
 
-</div>
 </body>
 </html>

@@ -26,21 +26,24 @@
           box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.13);
           background-color: #9fa8da;
           height: 56px;
-          width: 360px;
-          bottom: 0;
+          width: 100vw;
+          bottom: 0px;
           display: flex;                             
           align-items: center; 
           justify-content: center;
      }
 
      .settings_container {
-          width: 120px;
+          width: 33vw;
+          text-align: center;
      }
      .activities_container {
-          width: 120px;
+          width: 33vw;
+          text-align: center;
      }
      .statistics_container {
-          width: 120px;
+          width: 33vw;
+          text-align: center;
      }
      .description{
           text-align: left;
@@ -59,9 +62,7 @@
 * {
   box-sizing: border-box;
 }
-body {
-  background: white;
-}
+
 .graph__wrapper {
   width: 380px;
   margin: 30px auto;

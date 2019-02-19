@@ -3,17 +3,16 @@
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Activity Name</title>
 <link href="css/CompleteActivity.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body bgcolor="#E5E5E5">
 
-    <div class="background">
-<i class="material-icons" style="float:left;margin-left: 28px;cursor: pointer;color: rgba(133,133,133,1);padding-top: 10px; text-align: center;"><a href="activities" style="text-decoration: none">arrow_back</i></a>
+  <i class="material-icons" style="float: left;padding-left: 28px;cursor: pointer;color: #858585;display: inline-block;"><a href = "activities" style="color: inherit; text-decoration: none"> arrow_back</i></a>
     <div class="title">
-
-  <h3 style="font-weight: 400">Start Work</h3>
+  <h3 style="font-weight: 400; padding-right: 28px">Start Work</h3>
 </div>
 <div class="timeelapsed">
   <p>Time Elapsed: 0 min</p>
@@ -39,14 +38,17 @@
 function begin() {
     var fiveMinutes = 60 * 25,
         display = document.querySelector('#time');
+        document.getElementById('start').innerHTML = 'PAUSE';
     startTimer(fiveMinutes, display);
 };
 </script>
   
   <div class="card">
       <div class="container">
-        <div><span class="timer" id="time">25:00</span></div>
-        <button type="button" onclick="begin()">Start Work</button>
+        <div style="text-align: center;padding-top: 13px"><span class="timer" id="time" style="font-size: 20px">25:00</span></div>
+        <div style="text-align: center;">
+        <p id="start" style="font-size: 15px;color: #FFF;letter-spacing: 0.1em" type="button" onclick="begin()">START WORK</p>
+      </div>
       </div>
     </div>
 
@@ -57,10 +59,9 @@ function begin() {
 
 
 
-    <div class="fab" id="fabAExercise"> <i class="material-icons"><a href="ExercisesButton">spa</i></a>
+    <div class="fab" id="fabAExercise"> <i class="material-icons"><a href="ExercisesButton"style="color: inherit; text-decoration: none">spa</i></a>
     </div>
 
 
-</div>
 </body>
 </html>

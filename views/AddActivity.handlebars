@@ -3,18 +3,20 @@
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Add Activity</title>
 <link href="css/LogIn.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
-<div class="container">
-  <div class="background">
-  <i class="material-icons" style="float:left;margin-left: 28px;cursor: pointer;color: rgba(133,133,133,1);padding-top: 25px"><a href = "activities"> arrow_back</i></a>
+<body bgcolor="#E5E5E5">
+    
+  <i class="material-icons" style="float: left;padding-left: 28px;cursor: pointer;color: #858585;display: inline-block;"><a href = "activities" style="color: inherit; text-decoration: none"> arrow_back</i></a>
     <div class="title">
   <h3 style="font-weight: 500">Add an activity</h3>
 </div>
-  
+
+
+  <div class="container">
   <form id="AddActivityForm" role="form" method="get" action="/add">
     
     <div class="group">      
@@ -38,15 +40,16 @@
       <label>Break Length</label>
     </div>
 
-
-  <button class="pure-material-button-contained" style="background-color:#bdbdbd;color:#757575">Cancel</button>
-
+  <div style="text-align: center;padding-top: 5px">
+  <button class="pure-material-button-contained" style="background-color:#bdbdbd;color:#757575;">Cancel</button>
+  &nbsp;
   <button type="submit" class="pure-material-button-contained">Add</button>
+</div>
+
+</div>
   </form>
 
 </div>
-</div>
 
-</div>
 </body>
 </html>

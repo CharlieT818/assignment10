@@ -10,7 +10,8 @@
      font-style: normal;
      font-weight: normal;
      font-size: 18px;
-     color: rgba(133,133,133,1);
+     margin-bottom: 12px;
+     color: #858585;
      background-color: #FFF;
      position: relative;
      }
@@ -19,11 +20,10 @@
      }
      .background {
           position: relative;
-          padding-top: 10px;
           margin: auto;
           background: #E5E5E5;
-          width: 360px;
-          height: 640px;
+          width: 100vw;
+          height: 100vh;
           text-align: center;
           font-family: Roboto;
           font-style: normal;
@@ -36,7 +36,7 @@
           font-family: Roboto;
           font-style: normal;
           font-weight: normal;
-          color: rgba(133,133,133,1);
+          color: #858585;
           font-size: 20px; 
 
      }
@@ -45,8 +45,8 @@
           box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.13);
           background-color: #9fa8da;
           height: 56px;
-          width: 360px;
-          bottom: 0;
+          width: 100vw;
+          bottom: 0px;
           display: flex;                             
           align-items: center; 
           justify-content: center;
@@ -59,11 +59,11 @@
   width: 56px;
   height: 56px;
   background-color: #9fa8da;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  right: 16px;
+  right:16px;
   bottom: 72px;
   cursor: pointer;
   font-size: 2em;
@@ -75,6 +75,16 @@
   will-change: transform;
 }
 
+     .setting{
+        text-align: left;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 19px;
+          padding-left: 28px;
+          color: rgba(133,133,133,1);
+     }
+
      .edit_container {
           float: right;
      }
@@ -83,11 +93,14 @@
      }
 
      .settings_container {
-          width: 120px;
+          width: 33vw;
+          text-align: center;
      }
      .activities_container {
-          width: 120px;
+          width: 33vw;
+          text-align: center;
      }
      .statistics_container {
-          width: 120px;
+          width: 33vw;
+          text-align: center;
      }

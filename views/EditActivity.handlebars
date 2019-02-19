@@ -3,49 +3,53 @@
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Edit Activity</title>
 <link href="css/LogIn.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 </head>
-<body>
-<div class="container">
-    <div class="background">
-  <i class="material-icons" style="float:left;margin-left: 28px;cursor: pointer;color: rgba(133,133,133,1);padding-top: 25px"><a href = "activities"> arrow_back</i></a>
+<body bgcolor="#E5E5E5">
+    
+  <i class="material-icons" style="float: left;padding-left: 28px;cursor: pointer;color: #858585;display: inline-block;"><a href = "activities" style="color: inherit; text-decoration: none"> arrow_back</i></a>
     <div class="title">
-  <h3 style="font-weight: 500">Edit activity</h3>
+  <h3 style="font-weight: 500">Edit Activity</h3>
 </div>
-  
-  <form>
+
+
+  <div class="container">
+  <form id="AddActivityForm" role="form" method="get" action="/add">
     
     <div class="group">      
-      <input type="text" required>
+      <input type="text" class="form-control" id="ActivityName" name="ActivityName" required>
       <span class="highlight"></span>
       <span class="bar"></span>
       <label>Name</label>
     </div>
       
     <div class="group">      
-      <input type="text" required>
+      <input type="text" class="form-control" id="workLength" name="workLength" required>
       <span class="highlight"></span>
       <span class="bar"></span>
       <label>Work Length</label>
     </div>
 
        <div class="group">      
-      <input type="text" required>
+      <input type="text" class="form-control" id="breakLength" name="breakLength" required>
       <span class="highlight"></span>
       <span class="bar"></span>
       <label>Break Length</label>
     </div>
 
+  <div style="text-align: center;padding-top: 5px">
+  <button class="pure-material-button-contained" style="background-color:#bdbdbd;color:#757575;">Cancel</button>
+  &nbsp;
+  <button type="submit" class="pure-material-button-contained">Save changes</button>
+</div>
+
+</div>
   </form>
 
-  <button class="pure-material-button-contained" style="background-color:#bdbdbd;color:#757575">Cancel</button>
-  <button class="pure-material-button-contained">Save changes</button>
-  
 </div>
 
-</div>
 </body>
 </html>

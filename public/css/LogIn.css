@@ -1,14 +1,26 @@
 * { box-sizing:border-box; }
 
-/* basic stylings ------------------------------------------ */
-body 				 { background:url(https://scotch.io/wp-content/uploads/2014/07/61.jpg); }
+
+.title {
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: #858585;
+  font-size: 20px; 
+  padding-right: 28px;
+}
+.divider{
+  width: 5px
+    height:auto;
+    display:inline-block;
+}
 .container 		{ 
   font-family:'Roboto';
-  width:400px; 
+  width:400px;  
   margin:20px auto 0; 
   display:block; 
-  background:#FFF;
-  padding:10px 50px 50px;
+  padding:15px 50px 50px;
 }
 h2 		 { 
   text-align:center; 
@@ -32,6 +44,7 @@ input 				{
   padding:10px 10px 10px 5px;
   display:block;
   width:300px;
+  background-color: #E5E5E5;
   border:none;
   border-bottom:1px solid #757575;
 }
@@ -39,7 +52,7 @@ input:focus 		{ outline:none; }
 
 /* LABEL ======================================= */
 label 				 {
-  color:#999; 
+  color:#858585; 
   font-size:18px;
   font-weight:normal;
   position:absolute;
@@ -219,27 +232,3 @@ input:focus ~ .highlight {
     opacity: 0;
 }
 
-     .background {
-          position: relative;
-          padding-top: 10px;
-          margin: auto;
-          background: #E5E5E5;
-          width: 360px;
-          height: 640px;
-          text-align: center;
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 20px;
-          background-color: rgba(233,233,233,1);
-     }
-
-          .title {
-          text-align: center;
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: normal;
-          color: rgba(133,133,133,1);
-          font-size: 20px; 
-
-     }
