@@ -1,6 +1,4 @@
-repo
+Assignment 7
 ====
 
 Group: Responsibility
-Studio: Mindfulness
-Assignment: 7
