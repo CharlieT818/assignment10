@@ -7,7 +7,12 @@
 <title>Log In</title>
 <link href="css/LogIn.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/introHCI.js"></script>
+  {{> facebook}}
+<script src="/js/facebook.js"></script>
 </head>
+
 <body bgcolor="#E5E5E5">
     <div class="title">
   <h3 style="font-weight: 500; padding-top: 10px; padding-bottom: 10px; padding-left: 28px">Please create your login</h3>
@@ -29,12 +34,19 @@
       <span class="highlight"></span>
       <span class="bar"></span>
       <label>Password</label>
+      
+      </p>
     </div>
 
 
   <div style="text-align: center;padding-top: 8px">
   <button id="login" class="pure-material-button-contained">Log in</button>
 </a>
+<p class="facebookLogin"> Or login through Facebook
+      
+      <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+      </fb:login-button>
+
 </div>
 
 
