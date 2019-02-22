@@ -46,17 +46,16 @@
           text-align: center;
      }
      .description{
-          text-align: left;
-          font-family: Roboto
+          font-family: Roboto;
+          padding-top: 5px;
           font-size: 18px;
           color: rgba(133,133,133,1);
      }
      .facts{
-         text-align: left;
+         text-align: center;
           font-family: Roboto;
+      
           font-size: 18px;
-          padding-left: 25px;
-          padding-top: 210px;
           color: rgba(133,133,133,1); 
      }
 * {

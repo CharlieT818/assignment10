@@ -4,16 +4,22 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Activity Name</title>
+<title>Start Work</title>
 <link href="css/CompleteActivity.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/complete.js"></script>
 </head>
-<body bgcolor="#E5E5E5">
+<body bgcolor="#E5E5E5" style="margin: 0">
 
-  <i class="material-icons" style="float: left;padding-left: 28px;cursor: pointer;color: #858585;display: inline-block;"><a href = "activities" style="color: inherit; text-decoration: none"> arrow_back</i></a>
-    <div class="title">
-  <h3 style="font-weight: 400; padding-right: 28px">Start Work</h3>
+  <i class="material-icons" style="float: left;padding-left: 28px;cursor: pointer;color: #858585;display: inline-block;"><a href="activities" style="color: inherit; text-decoration: none"> arrow_back</i></a>
+
+    <div class="title" style="z-index: -2">
+  <h3 style="font-weight: 400; padding-right: 28px" id="header">Start Work</h3>
 </div>
+
+  <div id="text"></div>
+
 <div class="timeelapsed">
   <p>Time Elapsed: 0 min</p>
 </div>
@@ -47,20 +53,25 @@ function begin() {
       <div class="container">
         <div style="text-align: center;padding-top: 13px"><span class="timer" id="time" style="font-size: 20px">25:00</span></div>
         <div style="text-align: center;">
-        <p id="start" style="font-size: 15px;color: #FFF;letter-spacing: 0.1em" type="button" onclick="begin()">START WORK</p>
+        <p id="start" style="font-size: 14px;color: #FFF;letter-spacing:  1.3px" type="button" onclick="begin()">START WORK</p>
       </div>
       </div>
+    </div>
+
+    <div class="arrow">
+      <img src="images/arrow2.png"/>
     </div>
 
 
         <div class="button_finish">
-    <button onclick="javascrtpt:window.location.href='activities'" class="pure-material-button-contained">Finish</button>
+    <button onclick="javascrtpt:window.location.href='activities'" class="pure-material-button-outlined">Finish</button>
 </div>
 
-
-
-    <div class="fab" id="fabAExercise"> <i class="material-icons"><a href="ExercisesButton"style="color: inherit; text-decoration: none">spa</i></a>
+    <div class="fab"><i class="material-icons" id="spa">spa</i>
     </div>
+
+    <div class="fab-sha"></div>
+    <div class="close"></div>
 
 
 </body>
