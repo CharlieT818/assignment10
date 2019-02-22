@@ -1,9 +1,5 @@
 {
 	"activities": [
-		{
-			"ActivityName": "Math",
-			"workLength": "35",
-			"breakLength": "5"
-		}
+
 	]
 }
