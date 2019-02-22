@@ -204,7 +204,7 @@
 }
 
 .button_finish {
-    top:300px;
+    bottom: 200px;
      position: relative;
      text-align: center;
 }
