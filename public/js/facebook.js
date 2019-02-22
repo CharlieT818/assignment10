@@ -13,5 +13,5 @@ function statusChangeCallback(response) {
 }
 
 function changeUser(response) {
-  window.location.href = "activities" ;
+  window.location.href = "InputActivities" ;
 }
