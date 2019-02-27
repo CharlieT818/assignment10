@@ -9,13 +9,29 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body bgcolor="#E5E5E5">
-    
+
+
   <i class="material-icons" style="float: left;padding-left: 28px;cursor: pointer;color: #858585;display: inline-block;"><a href = "activities" style="color: inherit; text-decoration: none"> arrow_back</i></a>
     <div class="title">
   <h3 style="font-weight: 500">Edit Activity</h3>
 </div>
+<script>
+  window.onload = function(){
+    document.getElementById("name").innerText = getUrlParam('n');
+    document.getElementById('worklength').innerText = getUrlParam('workLength')+":00";
+    document.getElementById('breaklength').innerText = getUrlParam('breakLength')+":00";
+}
 
-
+function getUrlParam(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg); 
+    if (r != null) {
+        return unescape(r[2]);
+    } else {
+        return null; 
+    }
+}
+</script>
   <div class="container">
   <form id="AddActivityForm" role="form" method="get" action="/add">
     
@@ -23,21 +39,21 @@
       <input type="text" class="form-control" id="ActivityName" name="ActivityName" required>
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label>Name</label>
+      <label id="name">Name</label>
     </div>
       
     <div class="group">      
       <input type="text" class="form-control" id="workLength" name="workLength" required>
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label>Work Length</label>
+      <label id="worklength">Work Length</label>
     </div>
 
        <div class="group">      
       <input type="text" class="form-control" id="breakLength" name="breakLength" required>
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label>Break Length</label>
+      <label id="breaklength">Break Length</label>
     </div>
 
   <div style="text-align: center;padding-top: 5px">
