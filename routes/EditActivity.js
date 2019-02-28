@@ -1,3 +1,6 @@
-exports.view = function(req, res){
-  res.render('EditActivity');
-};
+var data = require("../data.json");
+
+exports.view= function(request, response) {    
+	// Your code goes here
+	response.render('EditActivity', data);
+ }

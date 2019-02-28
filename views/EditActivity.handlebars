@@ -17,9 +17,9 @@
 </div>
 <script>
   window.onload = function(){
-    document.getElementById("name").innerText = getUrlParam('n');
-    document.getElementById('worklength').innerText = getUrlParam('workLength')+":00";
-    document.getElementById('breaklength').innerText = getUrlParam('breakLength')+":00";
+    document.getElementById("ActivityName").value = getUrlParam('n');
+    document.getElementById("workLength").value = getUrlParam('workLength')+":00";
+    document.getElementById("breakLength").value = getUrlParam('breakLength')+":00";
 }
 
 function getUrlParam(name) {
@@ -33,27 +33,27 @@ function getUrlParam(name) {
 }
 </script>
   <div class="container">
-  <form id="AddActivityForm" role="form" method="get" action="/add">
+  <form id="EditActivityForm" role="form" method="get" action="/edit">
     
     <div class="group">      
       <input type="text" class="form-control" id="ActivityName" name="ActivityName" required>
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label id="name">Name</label>
+      <label>Name</label>
     </div>
       
     <div class="group">      
-      <input type="number" class="form-control" id="workLength" name="workLength" required>
+      <input type="text" class="form-control" id="workLength" name="workLength" required>
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label id="worklength">Work Length</label>
+      <label>Work Length</label>
     </div>
 
        <div class="group">      
-      <input type="number" class="form-control" id="breakLength" name="breakLength" required>
+      <input type="text" class="form-control" id="breakLength" name="breakLength" required>
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label id="breaklength">Break Length</label>
+      <label>Break Length</label>
     </div>
 
   <div style="text-align: center;padding-top: 5px">

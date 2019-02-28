@@ -5,13 +5,13 @@ var data = require('../data.json');
 
 exports.inputactivities = function(request, response){
   console.log(data);
-  	json = {'ActivityName': request.query.ActivityName1,'workLength':25, 'breakLength':25};
+  	json = {'ActivityName': request.query.ActivityName1,'workLength':25, 'breakLength':5};
 	data.activities.push(json);
-	json = {'ActivityName': request.query.ActivityName2,'workLength':25, 'breakLength':25};
+	json = {'ActivityName': request.query.ActivityName2,'workLength':25, 'breakLength':5};
 	data.activities.push(json);
-	json = {'ActivityName': request.query.ActivityName3,'workLength':25, 'breakLength':25};
+	json = {'ActivityName': request.query.ActivityName3,'workLength':25, 'breakLength':5};
 	data.activities.push(json);
-	json = {'ActivityName': request.query.ActivityName4,'workLength':25, 'breakLength':25};
+	json = {'ActivityName': request.query.ActivityName4,'workLength':25, 'breakLength':5};
 	data.activities.push(json);
   response.render('activities', data);
 };
