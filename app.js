@@ -11,6 +11,7 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 var activities = require('./routes/activities');
 var CompleteActivity = require('./routes/CompleteActivity');
+var CompleteActivityB = require('./routes/CompleteActivityB');
 var InputActivities = require('./routes/InputActivities');
 var add = require('./routes/add');
 var edit = require('./routes/edit');
@@ -52,6 +53,7 @@ app.get('/index', index.view);
 app.get('/activities', activities.view);
 app.get('/InputActivities', InputActivities.view);
 app.get('/CompleteActivity', CompleteActivity.view);
+app.get('/CompleteActivityB', CompleteActivityB.view);
 app.get('/AddActivity', AddActivity.view);
 app.get('/EditActivity', EditActivity.view);
 app.get('/Statistics', Statistics.view);
