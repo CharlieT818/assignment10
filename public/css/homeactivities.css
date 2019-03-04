@@ -17,6 +17,7 @@
      }
      .container {
      padding: 2px 16px;
+     padding-right: 1px;
      }
      .background {
           position: relative;
@@ -86,6 +87,8 @@
      }
 
      .edit_container {
+      margin-top: 6px;
+      padding-right: 7px;
           float: right;
      }
      .start_container {
