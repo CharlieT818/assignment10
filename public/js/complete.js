@@ -89,5 +89,7 @@ function clickFAB() {
 };
 
 function clickRectangle() {
+    console.log("clicked");
     ga("send", "event", "FocusExercise", "click");
+    window.location.href = "ExercisesButton";
 };
