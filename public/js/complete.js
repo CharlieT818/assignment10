@@ -1,4 +1,12 @@
 $(document).ready(function() {
+
+    $(".fab").click(clickFAB);
+    
+
+    setTimeout(function() {
+ $('.cardtooltip').fadeOut(2500);
+}, 700 );
+
     $(".fab").on('click', function(){
     $("#spa").css("color", "#9fa8da");
     $(".fab").addClass("expand");
@@ -75,3 +83,11 @@ var delay = ( function() {
         timer = setTimeout(callback, ms);
     };
 })();
+
+function clickFAB() {
+    ga("send", "event", "FocusExercise", "click");
+};
+
+function clickRectangle() {
+    ga("send", "event", "FocusExercise", "click");
+};

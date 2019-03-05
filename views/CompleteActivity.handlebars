@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Google Analytics Content Experiment code -->
+<script>function utmx_section(){}function utmx(){}(function(){var
+k='190996032-0',d=document,l=d.location,c=d.cookie;
+if(l.search.indexOf('utm_expid='+k)>0)return;
+function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+</script><script>utmx('url','A/B');</script>
+<!-- End of Google Analytics Content Experiment code -->
+
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +24,17 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/complete.js"></script>
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-135654484-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
 </head>
 <body bgcolor="#E5E5E5" style="margin: 0">
 
@@ -127,19 +153,29 @@ function getUrlParam(name) {
       <img src="images/Arrow2.png">
     </div>
 
+    	{{#if viewAlt}}
+        <div id="rectangle" class="button_finish" style="padding-bottom: 15px">
+            <button onclick="clickRectangle()" onclick="javascript:window.location.href='ExercisesButton'"  class="pure-material-button-contained" style="position: relative;">Focus exercise</button>
+        </div>
+        {{/if}}
 
         <div class="button_finish">
     <button onclick="javascript:window.location.href='activities'" class="pure-material-button-outlined">Finish</button>
 </div>
 
-
+		{{#unless viewAlt}}
+  <div class="cardtooltip">
+      <div class="containertool">
+        <p style="text-align:left; font-size: 16px;color: #FFF;margin: 0;font-weight: 400">Focus Exercise</p>
+      </div>
+    </div>
 
     <div class="fab"><i class="material-icons" id="spa">spa</i>
     </div>
 
     <div class="fab-sha"></div>
     <div class="close"></div>
-
+    	{{/unless}}
 
 </body>
 </html>
