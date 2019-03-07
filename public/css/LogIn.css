@@ -1,6 +1,5 @@
 * { box-sizing:border-box; }
 
-
 .title {
   text-align: center;
   font-family: Roboto;
@@ -18,9 +17,10 @@
 .container 		{ 
   font-family:'Roboto';
   width:400px;  
+  height: 225px;
   margin:20px auto 0; 
   display:block; 
-  padding:15px 50px 50px;
+  padding:0px 50px 50px;
 }
 h2 		 { 
   text-align:center; 

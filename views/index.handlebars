@@ -24,11 +24,15 @@ ga('send', 'pageview');
 </script>
 <!-- End Google Analytics -->
 </head>
-
 <body bgcolor="#E5E5E5" style="margin: 0">
-    <div class="title">
-  <h3 style="font-weight: 500; padding-top: 10px; padding-bottom: 10px; padding-left: 28px;font-size: 20px;">Please create your login</h3>
+	<div id="fb-root"></div>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=375478183233700&autoLogAppEvents=1"></script>
+
+	    <div class="title">
+  <h4 style="font-weight: 500; padding-top: 6px; padding-left: 28px;font-size: 24px; margin-bottom: 1px">focused.</h4>
 </div>
+
+      	<img src="images/undraw_studying_s3l7.svg" style="height: 200px;width: 200px;display: block;margin-bottom: 0px; margin-left: auto;margin-right: auto;">
 
 
   <div class="container">
@@ -54,14 +58,17 @@ ga('send', 'pageview');
 </form>
 
   <div style="text-align: center;padding-top: 8px">
+  	<button class="pure-material-button-contained" style="background-color:#bdbdbd;color:#757575;" onclick="inputClear()">Sign up</button>
+  	&nbsp;
   <button id="login" class="pure-material-button-contained" onclick="inputClear()">Log in</button>
 
-<p class="facebookLogin" style="font-size: 18px;font-weight: 500;color: #858585;font font-family: Roboto; padding-top: 25px;padding-bottom: 10px"> Or login through Facebook</p>
-      
-      <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-      </fb:login-button>
-
 </div>
+</div>
+ <p style="text-align: center; font-family: Roboto;color: #858585;font-size: 14px;font-weight: 600;padding-bottom: 4px">OR</p>
+  <div style="display: block;margin: auto;text-align: center;">
+      <div class="fb-login-button" data-size="medium" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="true"></div>
+  </div>
+
 
 
 </div>
