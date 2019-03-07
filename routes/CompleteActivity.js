@@ -1,7 +1,4 @@
 var data = require('../data.json');
-/*
- * GET home page.
- */
 
 exports.viewAlt = function(request, response){
 	console.log(data);

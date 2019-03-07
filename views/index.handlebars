@@ -11,6 +11,7 @@
 <script src="/js/bootstrap.min.js"></script>
   {{> facebook}}
 <script src="/js/facebook.js"></script>
+<script src="/js/clearjson.js"></script>
 <!-- Google Analytics -->
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -51,11 +52,10 @@ ga('send', 'pageview');
     </div>
 
 </form>
-    <a href="InputActivities">
-  <div style="text-align: center;padding-top: 8px">
-  <button id="login" class="pure-material-button-contained">Log in</button>
 
-</a>
+  <div style="text-align: center;padding-top: 8px">
+  <button id="login" class="pure-material-button-contained" onclick="inputClear()">Log in</button>
+
 <p class="facebookLogin" style="font-size: 18px;font-weight: 500;color: #858585;font font-family: Roboto; padding-top: 25px;padding-bottom: 10px"> Or login through Facebook</p>
       
       <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
