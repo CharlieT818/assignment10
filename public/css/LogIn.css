@@ -16,7 +16,7 @@
 }
 .container 		{ 
   font-family:'Roboto';
-  width:400px;  
+  width:100vw;  
   height: 224px;
   margin:20px auto 0; 
   display:block; 
