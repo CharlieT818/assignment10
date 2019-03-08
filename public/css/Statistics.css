@@ -63,10 +63,10 @@
 }
 
 .graph__wrapper {
-  width: 380px;
+  width: 300px;
   margin: 30px auto;
   position: relative;
-  padding-right: 360px;
+  padding-right: 290px;
 }
 .graph__wrapper svg {
   position: absolute;
@@ -79,9 +79,9 @@
 .coordinates span {
   display: inline-block;
   border-bottom: 0.5px solid #9e9e9e;
-  padding-right: 340px;
+  padding-right: 270px;
   height: 20px;
-  width: 300px;
+  width: 250px;
 }
 .coordinates span:before {
   counter-increment: line -1;

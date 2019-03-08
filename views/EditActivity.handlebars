@@ -7,14 +7,14 @@
 <title>Edit Activity</title>
 <link href="css/LogIn.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
 </head>
 <body bgcolor="#E5E5E5" style="margin: 0">
 
 
   <i class="material-icons" style="float: left;padding-left: 28px;cursor: pointer;color: #858585;display: inline-block;"><a href = "activities" style="color: inherit; text-decoration: none"> arrow_back</i></a>
     <div class="title">
-  <h3 style="font-weight: 500; padding-bottom: 26px">Edit Activity</h3>
+  <h3 style="font-weight: 500; padding-bottom: 26px; font-family: Lato">Edit Activity</h3>
 </div>
 <script>
   window.onload = function(){
@@ -33,8 +33,8 @@ function getUrlParam(name) {
     }
 }
 </script>
-  <div class="container" style="padding-top: 5px">
-  <form id="EditActivityForm" role="form" method="get" action="/edit">
+  <div class="container" style="padding-top: 5px;text-align: center;margin: auto;display: block;">
+  <form id="EditActivityForm" role="form" method="get" action="/edit" style="display: inline-block;">
     
     <div class="group">      
       <input type="text" class="form-control" id="ActivityName" name="ActivityName" required>
