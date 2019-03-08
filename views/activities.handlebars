@@ -7,7 +7,7 @@
 <title>Activities</title>
 <link href="css/homeactivities.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
 <!-- Google Analytics -->
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -25,13 +25,13 @@ ga('send', 'pageview');
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
 
 		<div class="title">
-	<h3 style="font-weight: 500">Activities</h3>
+	<h3 style="font-weight: 500;font-family: Lato">Activities</h3>
 </div>
 <div style="overflow-y:auto; height: 80vh">
   {{# each activities}}
 	<div class="card">
     	<div class="container">
-    		<h4 style="margin-top: 18px;font-weight: 400;margin-bottom: 20px">{{this.ActivityName}}</h4>
+    		<h4 style="margin-top: 18px;font-weight: 400;margin-bottom: 20px;font-family: Lato">{{this.ActivityName}}</h4>
     		<div class="start_container">
         <a href="CompleteActivity?n={{this.ActivityName}}&workLength={{this.workLength}}" style="color: inherit; text-decoration: none;line-height: 36px;font-size: 14px;color:#9fa8da;letter-spacing: 0.1em;vertical-align: top;margin-bottom: 5px">START</a>
     		</div>
