@@ -148,7 +148,7 @@ li:not(:last-child) {
      .arrow {
           position: relative;
           padding-right: 237px;
-          top:0;
+          bottom: 40px;
           text-align: center;
      }
      .fab {

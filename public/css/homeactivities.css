@@ -137,6 +137,10 @@ body {
   display: flex;
   position: relative;
 }
+
+.material.checkbox:focus {
+  outline: none !important;
+}
 .material.checkbox input[type='checkbox'] {
   margin: 0;
   font-size: 1.25em;
@@ -158,9 +162,27 @@ body {
 }
 .material.checkbox input[type='checkbox']:focus {
   outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-appearance:none !important;
+
+-webkit-box-shadow: none !important;
+-moz-box-shadow: none !important;
+box-shadow: none !important;
 }
+
+.material.checkbox input[type='checkbox']:focus + label::before{
+  outline: none !important;
+  cursor: default;
+  -webkit-appearance:none !important;
+
+-webkit-box-shadow: none !important;
+-moz-box-shadow: none !important;
+box-shadow: none !important;
+}
+
 .material.checkbox input[type='checkbox']:checked {
   background-color: #9fa8da;
+  outline: none;
 }
 .material.checkbox input[type='checkbox']:checked + label::before {
   background-color: #9fa8da;
@@ -176,9 +198,16 @@ body {
   transition: opacity 0s, -webkit-transform 0s;
   transition: opacity 0s, transform 0s;
   transition: opacity 0s, transform 0s, -webkit-transform 0s;
+    outline: none !important;
+    -webkit-appearance:none !important;
+
+-webkit-box-shadow: none !important;
+-moz-box-shadow: none !important;
+box-shadow: none !important;
 }
 .material.checkbox input[type='checkbox']:active + label::before {
   border-color: #9fa8da;
+
 }
 .material.checkbox label {
   cursor: pointer;
